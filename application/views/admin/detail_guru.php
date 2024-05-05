@@ -88,7 +88,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Données sur les étudiants</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">gestion de Professeur </li>
+                        <li class="menu-header">gestion des Professeurs</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
                                 <span>Professeur</span></a>
