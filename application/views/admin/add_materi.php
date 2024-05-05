@@ -134,20 +134,22 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="">
                         <div class="card" style="width:100%;">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;">Tambah Data Materi</h2>
+                                <h2 class="card-title" style="color: black;">Ajouter des données matérielles</h2>
                                 <hr>
                                 <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.
                                 </p>
-                                <a href="#detail" class="btn btn-success">Saya paham dan
-                                    ingin melanjutkan ⭢</a>
+                                <a href="#detail" class="btn btn-success">Je comprends et
+                                    je veux continuer
+
+ ⭢</a>
                             </div>
                         </div>
                         <div class="card card-success">
                             <div class="col-md-12 text-center">
                                 <p class="registration-title font-weight-bold display-4 mt-4" style="color:black; font-size: 50px;">
-                                    Tambah Materi</p>
-                                <p style="line-height:-30px;margin-top:-20px;">Silahkan isi data data yang diperlukan
-                                    dibawah </p>
+                                Ajouter du matériel</p>
+                                <p style="line-height:-30px;margin-top:-20px;">Veuillez remplir les données requises
+                                    sous </p>
                                 <hr>
                             </div>
                             <div id="detail" class="card-body">
@@ -157,11 +159,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                             <input type="hidden" name="id">
                                             <div class="form-row">
                                                 <div class="form-group col-md-12">
-                                                    <label for="inputEmail4">Nama Guru</label>
+                                                    <label for="inputEmail4">Nom de l'enseignant</label>
                                                     <input autocomplete="off" required type="text" list="nama_guru" onkeyup="autofill()" id="namaguru" name="nama_guru" class="form-control">
-                                                    <small>List guru sudah tersedia di autocomplete, kalian hanya
-                                                        tinggal klik input area nya atau dengan cara menulis namanya dan
-                                                        klik guru yang akan dipilih.</small>
+                                                    <small>La liste des professeurs est déjà disponible en autocomplétion, il vous suffit de...
+                                                        Cliquez simplement sur la zone de saisie ou en écrivant le nom et
+                                                        Cliquez sur le professeur que vous souhaitez sélectionner.
+
+Icône de validation par la communauté</small>
                                                     <datalist id=nama_guru>
                                                         <?php
                                                         include "koneksi.php";
@@ -174,38 +178,38 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlInput1">Nama Mata Pelajaran</label>
+                                                <label for="exampleFormControlInput1">Nom du sujet</label>
                                                 <input type="text" class="form-control" name="nama_mapel" id="nama_mapel" required placeholder="Pilih nama guru yang valid agar nama mapel muncul" readonly>
-                                                <small>Jika nama mapel sudah berganti artinya nama guru yang kamu
-                                                    masukan di input area adalah valid! jika tidak muncul nama mapel
-                                                    anda harus klik input area nama guru dan pilih guru yang tersedia
-                                                    disana.</small>
+                                                <small>Si le nom de la matière a changé, cela signifie le nom de votre professeur
+                                                    la saisie dans la zone de saisie est valide ! si le nom du dossier n'apparaît pas
+                                                    Vous devez cliquer sur la zone de saisie du nom de l'enseignant et sélectionner un enseignant disponible
+                                                    là.</small>
                                             </div>
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <div class="custom-file">
                                                         <input required type="file" name="video" required class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                        <label class="custom-file-label" for="inputGroupFile01">Upload
-                                                            Video
-                                                            Materi Disini</label>
+                                                        <label class="custom-file-label" for="inputGroupFile01">Télécharger
+                                                            Vidéos
+                                                            Matériel ici</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Deskripsi Materi</label>
+                                                <label for="exampleFormControlTextarea1">description du matériel</label>
                                                 <textarea class="form-control" required name="deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputState">Kelas</label>
+                                                <label for="inputState">Classe</label>
                                                 <select required id="inputState" name="kelas" class="form-control">
-                                                    <option selected>Pilih disini</option>
-                                                    <option value="X">X ( Kelas Sepuluh )</option>
-                                                    <option value="XI">XI ( Kelas Sebelas )</option>
-                                                    <option value="XII">XII ( Kelas Dua Belas )</option>
+                                                    <option selected>Choisissez ici</option>
+                                                    <option value="X">X (dixième année)</option>
+                                                    <option value="XI">XI (onzième année)</option>
+                                                    <option value="XII">XII (classe douze)</option>
                                                 </select>
                                             </div>
-                                            <button type="submit" class="btn btn-block btn-success">Tambah
-                                                materi ⭢</button>
+                                            <button type="submit" class="btn btn-block btn-success">Plus
+                                                matériel⭢</button>
                                     </div>
                                 </form>
                             </div>
