@@ -1,27 +1,19 @@
 <!--
 @Project: Learnify
-@Programmer: Syauqi Zaidan Khairan Khalaf
-@Website: https://linktr.ee/syauqi
-@Email : syaokay@gmail.com
+@Programmer: S
 
-@About-Learnify :
-Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf.
-Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian
-yang tersedia secara gratis. Learnify dibuat ditujukan agar para siswa dan
-guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 -->
 
 <!doctype html>
 <html lang="en">
 
 <head>
-
-    <!-- Required meta tags -->
+    <!-- Balises méta requises -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, rétrécir-pour-adapter-non">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
-    <title>Learnify - Belajar Dimana Saja & Kapan Saja !</title>
-    <!-- Bootstrap CSS -->
+    <title>Learnify - Apprendre Partout & À Tout Moment !</title>
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/linericon/style.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/font-awesome.min.css">
@@ -30,7 +22,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/animate-css/animate.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/popup/magnific-popup.css">
-    <!-- main css -->
+    <!-- CSS principal -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -42,31 +34,30 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 </head>
 
 <body>
-
-    <!-- Start Navigation Bar -->
+    <!-- Début de la barre de navigation -->
     <header class="header_area" style="background-color: white !important;">
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Marque et bascule regroupées pour une meilleure affichage mobile -->
                     <a class="navbar-brand logo_h" href="<?= base_url('welcome') ?>"><img src="<?= base_url('assets/') ?>img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <!-- Collecte des liens de navigation, des formulaires et autres contenus pour basculement -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Salut, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
-                                                                                                        $this->session->userdata('email')])->row_array();
-                                                                                                        echo $data['user']['nama'];
+                                                                                                        $this.session->userdata('email')])->row_array();
+                                                                                                        echo $data['user']['nom'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Accueil</a>
                             </li>
-                            <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log Out</a>
+                            <li class="nav-item "><a class="nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Se Déconnecter</a>
                             </li>
                         </ul>
                     </div>
@@ -74,4 +65,6 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
             </nav>
         </div>
     </header>
-    <!-- End Navigation Bar -->
+    <!-- Fin de la barre de navigation -->
+
+    
