@@ -48,7 +48,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" style="margin-bottom:4px !important;" src="../assets/stisla-assets/img/avatar/avatar-2.png" class="rounded-circle mr-1 my-auto">
-                            <div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Hello, <?php
+                            <div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Bonjour, <?php
                                                                                                     $data['user'] = $this->db->get_where('admin', ['email' =>
                                                                                                     $this->session->userdata('email')])->row_array();
                                                                                                     echo $data['user']['username'];
@@ -57,7 +57,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-title">Admin - Learnify</div>
                             <a href="<?= base_url('welcome/logout') ?>" class="dropdown-item has-icon text-danger">
-                                <i class="fas fa-sign-out-alt"></i> Logout
+                                <i class="fas fa-sign-out-alt"></i> Se déconnecter
                             </a>
                         </div>
                     </li>
