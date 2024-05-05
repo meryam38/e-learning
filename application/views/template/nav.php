@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- Balises méta requises -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="Learnify dibuat ditujukan agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja." name="Description" />
-    <meta content="Learnify, E-learning, Open Source, Syauqi Zaidan Khairan Khalaf, github, programmer indonesia" name="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, rétrécir-pour-adapter">
+    <meta content="Learnify est créé pour permettre aux élèves et aux enseignants de continuer à apprendre et à enseigner partout et à tout moment." name="Description" />
+    <meta content="Learnify, E-learning, Open Source, Syauqi Zaidan Khairan Khalaf, github, programmeur indonésien" name="keywords" />
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
-    <title>Learnify - Belajar Dimana Saja & Kapan Saja !</title>
-    <!-- Bootstrap CSS -->
+    <title>Learnify - Apprendre Partout & À Tout Moment !</title>
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/linericon/style.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/font-awesome.min.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/animate-css/animate.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/popup/magnific-popup.css">
-    <!-- Main CSS -->
+    <!-- CSS Principal -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
 
 <body>
 
-    <!--================Header Menu Area =================-->
+    <!--================Zone de Menu d'En-tête =================-->
     <header class="header_area">
         <div class="top_menu row m0">
             <div class="container">
@@ -62,29 +62,29 @@
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Marque et bascule regroupées pour une meilleure affichage mobile -->
                     <a class="navbar-brand logo_h" href="<?= base_url('welcome') ?>"><img src="<?= base_url('assets/') ?>img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <!-- Collecte des liens de navigation, des formulaires et d'autres contenus pour basculement -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item" id="nav"><a class="nav-link" href="<?= base_url('welcome') ?>">Beranda</a></li>
-                            <li class="nav-item" id="navtentang"><a class="nav-link" href="<?= base_url('welcome/tentang') ?>">Tentang</a>
+                            <li class="nav-item" id="nav"><a class="nav-link" href="<?= base_url('welcome') ?>">Accueil</a></li>
+                            <li class="nav-item" id="navtentang"><a class="nav-link" href="<?= base_url('welcome/tentang') ?>">À propos</a>
                             </li>
                             <li class="nav-item submenu dropdown" id="navpelajaran">
-                                <a href="<?= base_url('welcome/pelajaran') ?>" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pelajaran</a>
+                                <a href="<?= base_url('welcome/pelajaran') ?>" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Leçons</a>
                             </li>
-                            <li class="nav-item" id="navkontak"><a class="nav-link" href="<?= base_url('welcome/kontak') ?>">Kontak</a>
+                            <li class="nav-item" id="navkontak"><a class="nav-link" href="<?= base_url('welcome/kontak') ?>">Contact</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Masuk</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Se connecter</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <!--================ END Header Menu Area =================-->
+    <!--================ FIN Zone de Menu d'En-tête =================-->
