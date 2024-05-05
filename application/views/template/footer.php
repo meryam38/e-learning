@@ -1,100 +1,98 @@
 <!--
-@Project: Learnify
-@Programmer: Syauqi Zaidan Khairan Khalaf
-@Website: https://linktr.ee/syauqi
+@Projet: Learnify
+@Programmeur: 
 @Email : syaokay@gmail.com
 
-@About-Learnify :
-Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf.
-Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian
-yang tersedia secara gratis. Learnify dibuat ditujukan agar para siswa dan
-guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
+@À propos de Learnify :
+Web éducatif Open Source créé par 
+Learnify est un site web éducatif qui comprend des vidéos, des matières et un système d'examen
+qui sont disponibles gratuitement. Learnify a été créé pour permettre aux étudiants et
+aux enseignants de continuer à apprendre et à enseigner n'importe où et n'importe quand.
 -->
 
 
-<!--================ Start footer Area  =================-->
-<footer class="footer-area p_60">
-    <div class="container">
-        <div class="row">
+<!--================ Début de la zone de pied de page  =================-->
+<footer class="zone_pied_de_page p_60">
+    <div class="conteneur">
+        <div class="ligne">
             <div class="col-lg-2  col-md-6 col-sm-6">
-                <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Tentang Kami</h6>
-                    <ul class="list">
-                        <li><a href="<?= base_url('welcome/tentang') ?>">Tentang Learnify</a></li>
-                        <li><a href="<?= base_url('welcome/materi') ?>">Materi Learnify</a></li>
-                        <li><a href="<?= base_url('welcome/kontak') ?>">Kontak Learnify</a></li>
-                        <li><a href="http://smkn1ciamis.id/">Website Resmi Sekolah</a></li>
+                <div class="widget_pied_de_page_unique tp_widgets">
+                    <h6 class="titre_pied_de_page">À propos de nous</h6>
+                    <ul class="liste">
+                        <li><a href="<?= base_url('welcome/tentang') ?>">À propos de Learnify</a></li>
+                        <li><a href="<?= base_url('welcome/materi') ?>">Matières Learnify</a></li>
+                        <li><a href="<?= base_url('welcome/kontak') ?>">Contact Learnify</a></li>
+                        <li><a href="https://www.enset-media.ac.ma/">Site Web officiel de l'école</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2  col-md-6 col-sm-6">
-                <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Masuk - Sign in</h6>
-                    <ul class="list">
-                        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Untuk Siswa</a></li>
-                        <li><a href="<?= base_url('welcome/guru') ?>">Untuk Guru</a></li>
+                <div class="widget_pied_de_page_unique tp_widgets">
+                    <h6 class="titre_pied_de_page">Se connecter - S'inscrire</h6>
+                    <ul class="liste">
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Pour les étudiants</a></li>
+                        <li><a href="<?= base_url('welcome/guru') ?>">Pour les enseignants</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2  col-md-6 col-sm-6">
-                <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Pelajaran - Materi</h6>
-                    <ul class="list">
-                        <li><a href="javaScript:void(0);">IPA</a></li>
-                        <li><a href="javaScript:void(0);">Matematika</a></li>
-                        <li><a href="javaScript:void(0);">Bahasa Inggris</a></li>
-                        <li><a href="javaScript:void(0);">Bahasa Indonesia</a></li>
-                        <li><a href="javaScript:void(0);">Pendidikan Agama Islam</a></li>
+                <div class="widget_pied_de_page_unique tp_widgets">
+                    <h6 class="titre_pied_de_page">Cours - Matières</h6>
+                    <ul class="liste">
+                        <li><a href="javaScript:void(0);">ingenierie de formation</a></li>
+                        <li><a href="javaScript:void(0);">technologies de web</a></li>
+                        <li><a href="javaScript:void(0);">reseaux</a></li>
+                        <li><a href="javaScript:void(0);">evaluation des diapositifs de formation</a></li>
+                        <li><a href="javaScript:void(0);">gestion de projet</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2  col-md-6 col-sm-6">
-                <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Tentang Developer</h6>
-                    <ul class="list">
-                        <li>Perfectionist Web Developer with one years of experience as a Web Developer and Web Designer. Skilled at Designing and developing Websites. Excellent written and oral communication skills; capable of explaining complex software issues in easy-to-understand terms.</li>
+                <div class="widget_pied_de_page_unique tp_widgets">
+                    <h6 class="titre_pied_de_page">À propos des  développeurs</h6>
+                    <ul class="liste">
+                        <li>Etudiants du master digitalisation des processus educatifs et ingenierie de competences  en tant que développeurs Web et concepteurs Web. Compétents dans la conception et le développement de sites Web. Excellentes compétences en communication écrite et orale ; capable d'expliquer des problèmes logiciels complexes en termes faciles à comprendre.</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <h4 class="footer_title">Tentang Learnify</h4>
-                <p>
-                    Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf. Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian yang tersedia secara gratis. Learnify dibuat ditujukan agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
-                </p>
-            </div>
-        </div>
-        <div class="row footer-bottom d-flex justify-content-between align-items-center">
-            <p class="col-lg-8 col-md-8 footer-text m-0">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <span class="text-danger"> &#10084;</span> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a> <br> Learnify is made with <span class="text-danger"> &#10084;</span> by <a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf </a> with MIT License
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            <div class="col-lg-4 col-md-4 footer-social">
-                <a href="https://www.facebook.com/syaaauqi"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/syaaauqi"><i class="fa fa-twitter"></i></a>
-                <a href="https://dribbble.com/syaufy"><i class="fa fa-dribbble"></i></a>
-                <a href="https://www.behance.net/syaufy"><i class="fa fa-behance"></i></a>
-                <a href="https://www.github.com/syauqi"><i class="fa fa-github"></i></a>
-                <a href="https://www.instagram.com/syaufy"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
+
+         <div class="col-lg-4 col-md-6 col-sm-6">
+    <h4 class="footer_title">À propos de Learnify</h4>
+    <p>
+        Learnify est un site Web éducatif open source créé par Hajar El Hjouji ; Diyaa Souiss ; Meryem EL Batoul Daaif ; Youssef Amzoug ;Mohammed Amine Lkhatoui . Learnify est un site Web éducatif équipé de vidéos, de matériel et d'un système d'examen disponibles gratuitement. Learnify a été créé dans le but de permettre aux élèves et aux enseignants de continuer à apprendre et à enseigner partout et à tout moment.
+    </p>
+</div>
+</div>
+<div class="row footer-bottom d-flex justify-content-between align-items-center">
+    <p class="col-lg-8 col-md-8 footer-text m-0">
+        <!-- Le lien vers Colorlib ne peut pas être retiré. Le modèle est sous licence CC BY 3.0. -->
+        Droits d'auteur ©<script>
+            document.write(new Date().getFullYear());
+        </script> Tous droits réservés | Ce modèle a été créé avec <span class="text-danger"> ❤</span> par
+        <a href="https://colorlib.com" target="_blank">Colorlib</a> <br> Learnify a été créé avec <span class="text-danger"> ❤</span> sous licence MIT
+        <!-- Le lien vers Colorlib ne peut pas être retiré. Le modèle est sous licence CC BY 3.0. -->
+    </p>
+    <div class="col-lg-4 col-md-4 footer-social">
+    
+        <a href="https://www.github.com/syauqi"><i class="fa fa-github"></i></a>
+      
     </div>
+</div>
+</div>
 </footer>
-<!--================ End footer Area  =================-->
+<!--================ Fin de la zone de pied de page =================-->
 
 
-<!-- Start Login Modal -->
+
+<!-- Début de la fenêtre modale de connexion -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title text-dark font-weight-bold" style="color:#212529 !important;" id="exampleModalCenterTitle">
-                    Learnify - Masuk Sekarang</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    Learnify - Connectez-vous maintenant</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                    <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -110,31 +108,30 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                     <label class="label-font" for="
                                         exampleFormControlInput1">
                                         Email</label>
-                                    <input type="text" value="<?= set_value('email'); ?>" class="form-control" name="email" autocomplete="off" id="email" placeholder="Masukan email mu disini ..">
+                                    <input type="text" value="<?= set_value('email'); ?>" class="form-control" name="email" autocomplete="off" id="email" placeholder="Entrez votre email ici ..">
                                     <small class="text-danger"></small>
                                 </div>
                                 <div class="form-group">
                                     <label class="label-font" for="
                                         exampleFormControlInput1">
-                                        Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" placeholder="Masukan password mu disini ..">
+                                        Mot de passe</label>
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Entrez votre mot de passe ici ..">
                                     <small class="text-danger"></small>
                                 </div>
                                 <div class="form-check mt-2">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                     <label class="form-check-label" for="defaultCheck1">
-                                        Ingat saya.
+                                        Se souvenir de moi.
                                     </label>
                                 </div>
-                                <p class="terms">Dengan login anda
-                                    menyetujui
-                                    <i>privasi dan persyaratan ketentuan
-                                        hukum kami </i> .
-                                    belum punya akun? daftar <a href=" <?= base_url('user/registration') ?>">
-                                        disini.</a>
+                                <p class="terms">En vous connectant, vous acceptez
+                                    <i>la confidentialité et les conditions légales
+                                        de notre site </i> .
+                                    Vous n'avez pas de compte ? Inscrivez-vous <a href=" <?= base_url('user/registration') ?>">
+                                        ici.</a>
                                 </p>
-                                <button class="btn btn-block font-weight-bold" style="background-color: #4dbf1c;color:white;font-size:18px;">Login
-                                    Sekarang!</button>
+                                <button class="btn btn-block font-weight-bold" style="background-color: #4dbf1c;color:white;font-size:18px;">Connectez-vous
+                                    maintenant!</button>
                             </form>
                         </div>
                     </div>
@@ -143,16 +140,16 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         </div>
     </div>
 </div>
-<!-- End Login Modal -->
+<!-- Fin de la fenêtre modale de connexion -->
 
 
-<!-- Sweetaler Flashdata -->
+<!-- Données flash Sweetaler -->
 <?php if ($this->session->flashdata('success-reg')) : ?>
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Kamu berhasil daftar!',
-            text: 'Sekarang kamu boleh login!',
+            title: 'Vous avez réussi à vous inscrire !',
+            text: 'Maintenant, vous pouvez vous connecter !',
             showConfirmButton: false,
             timer: 2500
         })
@@ -164,8 +161,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Kamu berhasil daftar!',
-            text: 'Sekarang login yuk!',
+            title: 'Vous avez réussi à vous inscrire !',
+            text: 'Maintenant, connectez-vous !',
             showConfirmButton: false,
             timer: 2500
         })
@@ -177,8 +174,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Email Telah Diverifikasi!',
-            text: 'Sekarang login yuk!',
+            title: 'Email a été vérifié !',
+            text: 'Maintenant, connectez-vous !',
             showConfirmButton: false,
             timer: 2500
         })
@@ -190,8 +187,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Kamu berhasil logout!',
-            text: 'Selamat tinggal, Sampai jumpa lagi!',
+            title: 'Vous avez réussi à vous déconnecter !',
+            text: 'Au revoir, à bientôt !',
             showConfirmButton: false,
             timer: 2500
         })
@@ -203,8 +200,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Gagal login!',
-            text: 'Silahkan Periksa Kembali Email dan Password Kamu!',
+            title: 'Échec de la connexion !',
+            text: 'Veuillez vérifier votre email et votre mot de passe !',
             showConfirmButton: false,
             timer: 2500
         });
@@ -216,8 +213,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Email Belum Diverifikasi!',
-            text: 'Silahkan Cek Email Kamu Dahulu!',
+            title: 'Email non vérifié !',
+            text: 'Veuillez vérifier votre email d\'abord !',
             showConfirmButton: false,
             timer: 2500
         })
@@ -229,8 +226,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Password Salah!',
-            text: 'Silahkan Periksa Kembali Password Kamu!',
+            title: 'Mot de passe incorrect !',
+            text: 'Veuillez vérifier votre mot de passe !',
             showConfirmButton: false,
             timer: 2500
         });
@@ -242,8 +239,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Harap Login Terlebih Dahulu !',
-            text: 'Silahkan Login Dahulu !',
+            title: 'Veuillez vous connecter d\'abord !',
+            text: 'Veuillez vous connecter d\'abord !',
             showConfirmButton: false,
             timer: 2500
         });
