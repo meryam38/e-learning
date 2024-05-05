@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Data Materi - Learnify</title>
+    <title>Données matérielles - Learnify</title>
 
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
@@ -51,7 +51,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" style="margin-bottom:3px !important;" src="../assets/stisla-assets/img/avatar/avatar-2.png" class="rounded-circle mr-1 my-auto">
-                            <div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Hello, <?php
+                            <div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Bonjour, <?php
                                                                                                     $data['user'] = $this->db->get_where('admin', ['email' =>
                                                                                                     $this->session->userdata('email')])->row_array();
                                                                                                     echo $data['user']['username'];
@@ -60,7 +60,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-title">Admin - Learnify</div>
                             <a href="<?= base_url('welcome/logout') ?>" class="dropdown-item has-icon text-danger">
-                                <i class="fas fa-sign-out-alt"></i> Logout
+                                <i class="fas fa-sign-out-alt"></i> Se déconnecter
                             </a>
                         </div>
                     </li>
@@ -78,50 +78,50 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <a href="<?= base_url('admin') ?>">LY</a>
                     </div>
                     <ul class="sidebar-menu">
-                        <li class="menu-header ">Dashboard</li>
+                        <li class="menu-header ">Tableaux de bord</li>
                         <li class="nav-item dropdown">
-                            <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                            <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Tableaux de bord</span></a>
                         </li>
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Gestion des étudiants</li>
                         <li class="nav-item dropdown ">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>Étudiant</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Données sur les étudiants</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Management GuruProfesseur de gestion</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
                                 <span>Guru</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Données sur les enseignants</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tajouter des données sur l'enseignant</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">La gestion du matériel</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-                                <span>Materi</span></a>
+                                <span>Matériel</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Données matérielles</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Ajouter du matériel</a>
                                 </li>
 
                             </ul>
                         </li>
-                        <li class="menu-header">About Developer</li>
+                        <li class="menu-header">À propos du développeur</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
-                                <span>Developer</span></a>
+                                <span>développeur</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">À propos
+                                        Fabricant</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">À propos
                                         Learnify</a>
                                 </li>
                             </ul>
@@ -136,11 +136,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <section class="section">
                     <div class="card" style="width:100%;">
                         <div class="card-body">
-                            <h2 class="card-title" style="color: black;">Management Data Materi Learnify</h2>
+                            <h2 class="card-title" style="color: black;">Apprendre la gestion des données matérielles</h2>
                             <hr>
-                            <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.</p>
-                            <a href="<?= base_url('admin/tambah_materi') ?>" class="btn btn-success">Tambah
-                                Data Materi ⭢</a>
+                            <p class="card-text"> Après avoir croisé Helen dans un restaurant, j'ai réalisé qu'elle n'était qu'un rendez-vous au bureau mis dans une présentation pour notre stand-up d'aujourd'hui. Qui est responsable de cette demande ? qui est responsable de cette demande ? mais déplacer les poteaux de but gagne du terrain.
+
+</p>
+                            <a href="<?= base_url('admin/tambah_materi') ?>" class="btn btn-success">Plus
+                                Données matérielles ⭢</a>
                         </div>
                     </div>
                     <div class="row">
@@ -151,11 +153,11 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                         <thead class="thead-light">
                                             <tr class="text-center">
                                                 <th scope="col">ID</th>
-                                                <th scope="col">Nama Guru</th>
-                                                <th scope="col">Nama Mapel</th>
-                                                <th scope="col">Deskripsi</th>
-                                                <th scope="col">Kelas</th>
-                                                <th scope="col">Option</th>
+                                                <th scope="col">Nom de l'enseignant</th>
+                                                <th scope="col">Nom de l'érable</th>
+                                                <th scope="col">Description</th>
+                                                <th scope="col">Classe</th>
+                                                <th scope="col">Possibilités</th>
                                             </tr>
                                         </thead>
 
@@ -187,9 +189,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                                     </td>
 
                                                     <td class="text-center">
-                                                        <a href="<?php echo site_url('admin/update_materi/' . $u->id); ?>" class="btn btn-info">Update ⭢</a>
+                                                        <a href="<?php echo site_url('admin/update_materi/' . $u->id); ?>" class="btn btn-info">Modifier ⭢</a> 
 
-                                                        <a href="<?php echo site_url('admin/delete_materi/' . $u->id); ?>" class="btn btn-danger remove">Delete ✖</a>
+                                                        <a href="<?php echo site_url('admin/delete_materi/' . $u->id); ?>" class="btn btn-danger remove">Supprimer ✖</a>
                                                     </td>
 
                                                 </tr>
@@ -199,8 +201,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                         </tbody>
                                     </table>
                                 </div>
-                                <p class="small font-weight-bold">Sebelum mengupload file, harus terlebih dahulu
-                                    melakukan config max_upload di php.ini</p>
+                                <p class="small font-weight-bold">Avant de télécharger des fichiers, vous devez d'abord
+                                    faire la configuration max_upload dans php.ini
+
+</p>
                             </div>
                         </div>
                     </div>
