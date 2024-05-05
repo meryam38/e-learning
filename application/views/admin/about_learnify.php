@@ -17,7 +17,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-	<title>Tentang Developer - Learnify</title>
+	<title>À propos du développeur - Learnify</title>
 	<!-- General CSS Files -->
 	<link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 				<ul class="navbar-nav navbar-right">
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
 							<img alt="image" style="margin-bottom:4px !important;" src="../assets/stisla-assets/img/avatar/avatar-2.png" class="rounded-circle mr-1 my-auto border-white">
-							<div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Hello, <?php
+							<div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Bonjour, <?php
 																									$data['user'] = $this->db->get_where('admin', ['email' =>
 																									$this->session->userdata('email')])->row_array();
 																									echo $data['user']['username'];
@@ -55,7 +55,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 						<div class="dropdown-menu dropdown-menu-right">
 							<div class="dropdown-title">Admin - Learnify</div>
 							<a href="<?= base_url('welcome/logout') ?>" class="dropdown-item has-icon text-danger">
-								<i class="fas fa-sign-out-alt"></i> Logout
+								<i class="fas fa-sign-out-alt"></i> Se déconnecter
 							</a>
 						</div>
 					</li>
@@ -73,50 +73,54 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 						<a href="<?= base_url('admin') ?>">LY</a>
 					</div>
 					<ul class="sidebar-menu">
-						<li class="menu-header ">Dashboard</li>
+						<li class="menu-header ">Tableaux de bord
+
+</li>
 						<li class="nav-item dropdown ">
-							<a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+							<a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Tableaux de bord
+
+</span></a>
 						</li>
-						<li class="menu-header">Management Siswa</li>
+						<li class="menu-header">Gestion des étudiants</li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-								<span>Siswa</span></a>
+								<span>Étudiant</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+								<li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Données sur les étudiants</a></li>
 							</ul>
 						</li>
-						<li class="menu-header">Management Guru</li>
+						<li class="menu-header">Professeur de gestion</li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-								<span>Guru</span></a>
+								<span>Professeur</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+								<li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Données sur les enseignants</a>
 								</li>
-								<li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+								<li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Ajouter des données sur l'enseignant</a>
 								</li>
 							</ul>
 						</li>
-						<li class="menu-header">Management Materi</li>
+						<li class="menu-header">La gestion du matériel</li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-								<span>Materi</span></a>
+								<span>Matériel</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+								<li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Données matérielles</a>
 								</li>
-								<li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+								<li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Ajouter du matériel</a>
 								</li>
 
 							</ul>
 						</li>
-						<li class="menu-header">About Developer</li>
+						<li class="menu-header">À propos du développeur</li>
 						<li class="nav-item dropdown active">
 							<a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
-								<span>Developer</span></a>
+								<span>développeur</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-										Pembuat</a>
+								<li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">À propos
+Fabricant</a>
 								</li>
-								<li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+								<li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">À propos
 										Learnify</a>
 								</li>
 							</ul>
@@ -129,7 +133,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 			<div class="main-content">
 				<section class="section">
 					<div class="section-header">
-						<h1 style="font-size: 27px; letter-spacing:-0.5px; color:black;">Tentang Project Learnify </h1>
+						<h1 style="font-size: 27px; letter-spacing:-0.5px; color:black;">À propos du projet Learnify</h1>
 					</div>
 					<div class="">
 						<video class="afterglow" autoplay id="myvideo" width="1280" height="720">
@@ -140,9 +144,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 					<div class="">
 						<div class="card" style="width:100%;">
 							<div class="card-body">
-								<h2 class="card-title" style="color: black;">Tentang Learnify</h2>
+								<h2 class="card-title" style="color: black;">À propos de Learnify</h2>
 								<hr>
-								<p class="card-text">Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf. <br> Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian yang tersedia secara gratis. <br> Learnify dibuat ditujukan agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja. </p>
+								<p class="card-text">Web éducatif Open Source créé par Syauqi Zaidan Khairan Khalaf. <br> Learnify est un site Web éducatif doté de vidéos, de matériel et d'un système d'examen disponibles gratuitement. <br> Learnify a été créé pour que les étudiants et les enseignants puissent continuer à apprendre et à enseigner n'importe où et à tout moment. </p>
 							</div>
 						</div>
 					</div>
