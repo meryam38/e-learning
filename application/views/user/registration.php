@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
-    <title>Learnify - Belajar Dimana Saja & Kapan Saja!</title>
+    <title>Learnify - Apprenez n'importe où et n'importe quand !</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/linericon/style.css">
@@ -63,15 +63,15 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item" id="nav"><a class="nav-link" href="<?= base_url('welcome') ?>">Beranda</a></li>
-                            <li class="nav-item" id="navtentang"><a class="nav-link" href="<?= base_url('welcome/tentang') ?>">Tentang</a>
+                            <li class="nav-item" id="nav"><a class="nav-link" href="<?= base_url('welcome') ?>">Accueil</a></li>
+                            <li class="nav-item" id="navtentang"><a class="nav-link" href="<?= base_url('welcome/tentang') ?>">À propos</a>
                             </li>
                             <li class="nav-item submenu dropdown" id="navpelajaran">
-                                <a href="<?= base_url('welcome/pelajaran') ?>" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pelajaran</a>
+                                <a href="<?= base_url('welcome/pelajaran') ?>" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Leçons</a>
                             </li>
-                            <li class="nav-item" id="navkontak"><a class="nav-link" href="<?= base_url('welcome/kontak') ?>">Kontak</a>
+                            <li class="nav-item" id="navkontak"><a class="nav-link" href="<?= base_url('welcome/kontak') ?>">Contact</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Masuk</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Connexion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,10 +87,10 @@
             </div>
             <div class="container">
                 <div class="banner_content text-center">
-                    <h2>Pendaftaran Learnify</h2>
+                    <h2>Inscription à Learnify</h2>
                     <div class="page_link">
-                        <a href="<?= base_url('welcome') ?>">Beranda</a>
-                        <a href="<?= base_url('user/registration') ?>">Pendaftaran</a>
+                        <a href="<?= base_url('welcome') ?>">Accueil</a>
+                        <a href="<?= base_url('user/registration') ?>">Inscription</a>
                     </div>
                 </div>
             </div>
@@ -104,8 +104,8 @@
         <div class="row bg-registration p-3">
             <div class="col-md-12 text-center">
                 <p class="registration-title font-weight-bold display-4 mt-4" style="font-size: 50px;">
-                    Pendaftaran Learnify</p>
-                <p style="line-height:-30px;margin-top:-20px;">Silahkan isi data data yang diperlukan dibawah ini </p>
+                    Inscription à Learnify</p>
+                <p style="line-height:-30px;margin-top:-20px;">Veuillez remplir les données requises ci-dessous</p>
                 <hr>
             </div>
             <div class="col-md-6 mx-auto text-center">
@@ -114,7 +114,7 @@
             <div class="col-md-6 mx-auto my-auto mt--5">
                 <form action="<?= base_url('user/registration_act') ?>" method="post">
                     <div class="form-group">
-                        <label for="nama_lengkap" class="label-font-register">Nama lengkap</label>
+                        <label for="nama_lengkap" class="label-font-register">Nom complet</label>
                         <input type="text" autocomplete="off" class="form-control effect-9" name="nama" id="nama_lengkap" value="<?= set_value('nama'); ?>">
                         <?= form_error('nama', '<small class="text-danger">', '</small>'); ?>
                     </div>
@@ -125,12 +125,12 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="password" class="label-font-register">Password</label>
+                            <label for="password" class="label-font-register">Mot de passe</label>
                             <input type="password" class="form-control" name="password" id="password">
                             <?= form_error('password', '<small class="text-danger">', '</small>'); ?>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="retype_password" class="label-font-register">Retype password</label>
+                            <label for="retype_password" class="label-font-register">Retapez le mot de passe</label>
                             <input type="password" class="form-control" name="retype_password" id="retype_password">
                             <?= form_error('retype_password', '<small class="text-danger">', '</small>'); ?>
                         </div>
@@ -138,14 +138,12 @@
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" id="defaultCheck1" onchange="document.getElementById('btnsubmit').disabled = !this.checked;">
                         <label class=" form-check-label" for="defaultCheck1">
-                            Saya setuju dan ingin melanjutkan
+                           Je suis d'accord et je veux continuer
                         </label>
                     </div>
-                    <p class="terms">Dengan mendaftar anda menyetujui <i>privasi dan persyaratan ketentuan
-                            hukum kami </i>
-                        baca selengkapnya <a href="#"> disini</a></p>
-                    <button type="submit" name="submit" id="btnsubmit" disabled class="btn btn-block btn-modal btn-submit">Daftar
-                        Sekarang!</button>
+                    <p class="terms">En vous inscrivant, vous acceptez notre <i>politique de confidentialité et nos conditions légales </i>lire la suite
+                     <a href="#"> ici</a></p>
+                    <button type="submit" name="submit" id="btnsubmit" disabled class="btn btn-block btn-modal btn-submit">Inscrivez-vous maintenant !</button>
                 </form>
             </div>
         </div>

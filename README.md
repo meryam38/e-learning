@@ -1,10 +1,10 @@
-<h1 align="center">Selamat datang di repository Learnify! 👋🏻</h1>
+<h1 align="center">Welcome to the Learnify repository!"👋🏻</h1>
 
 ![learnify-preview](https://user-images.githubusercontent.com/46257169/173141000-0a2346bf-adbc-41cb-9699-e7ffff1cba8e.png)
 
 <p></p>
 
-<h4 align="center">Website e-learning untuk membantu belajar dimana saja dan kapan saja yang dibuat dengan <a href="https://codeigniter.com/" target="_blank">Codeigniter</a>.
+<h4 align="center">"A website for e-learning to assist in studying anywhere and anytime created with .."<a href="https://codeigniter.com/" target="_blank">Our team</a>.
 </h4>
 
 <p></p>
@@ -14,52 +14,49 @@
 	<img src="https://img.shields.io/github/stars/syauqi/learnify?style=flat-square"> 
 	<img src="https://img.shields.io/github/forks/syauqi/learnify?style=flat-square">
 	<img src="https://img.shields.io/github/license/syauqi/learnify?style=flat-square">
-	<img src="https://img.shields.io/badge/maintained%3F-no-red.svg?style=flat-square">
 	<img src="https://img.shields.io/github/followers/syauqi.svg?style=flat-square&label=followers">
 </p>
 
 <p align="center">
-  <a href="#tentang">Tentang Project</a> •
-  <a href="#fitur">Fitur</a> •
+  <a href="#tentang">About the project</a> •
+  <a href="#fitur">Feature</a> •
   <a href="#download">Download & Install</a> •
-  <a href="#akun">Akun Default</a> •
-  <a href="#dukungan">Dukungan</a> •
-  <a href="#lisensi">Lisensi</a>
+  <a href="#akun">Default Account</a> •
+  <a href="#lisensi">Lisence</a>
 </p>
 
 <p></p>
 
-<h2 id="tentang">👨🏻‍🏫 Tentang Learnify</h2>
+<h2 id="tentang">👨🏻‍🏫 About Learnify</h2>
 
-Website edukasi yang dibuat dalam rangka mengatasi solusi pembelajaran kala pandemi, learnify dibuat agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
+An educational website created in order to overcome learning solutions , learnify was created so that students and teachers can continue learning and teaching anywhere and anytime..
 
 <p></p>
 
-<h2 id="fitur">✨ Fitur Tersedia</h2>
+<h2 id="fitur">✨Available Features</h2>
 
-- Autentikasi
-  - Login siswa, guru dan admin
-  - Daftar sebagai siswa dan guru
+- Authentication
+  - Student, teacher and admin login 
+  - Register as a student and teacher
 - Data Management
-  - Pengguna [akses video pembelajaran dan memberi comment juga reaksi]
-  - Guru [upload materi berdasarkan kelas dan mata pelajaran]
-  - Admin [mengatur data siswa, guru sekaligus materi]
-- Diskusi dan Reaksi Dengan Integrasi Disqus
-- Ujian Online [segera hadir]
+  - Users [access learning videos and give comments and reactions]
+  - Teachers [upload class and subject based learning materials] 
+  - Admin [manage student, teacher and learning material data]
+- Discussion and Reactions
+- peaper material/Docs [coming soon]
+- Online Exams [coming soon]
 
 <p></p>
 
-<h2 id="demo">🏠 Halaman Demo</h2>
+<h2 id="demo">🏠 Page Demo</h2>
 
-Halaman demo untuk sementara tidak ada dikarenakan layanan hosting yang tidak tersedia untuk deploy aplikasi ini, kalian dapat mendownload aplikasi ini lalu menjalankan secara local di komputer anda.
-
-Update: anda dapat mengakses di http://programmer.smkn1ciamis.id/learnify/ namun tolong berikan issues jika website tersebut tidak berjalan
+The demo page is temporarily unavailable due to the unavailability of hosting services to deploy this application!
 
 <p></p>
 
-<h2 id="akun">🔑 Daftar Akun Tersedia</h2>
+<h2 id="akun">🔑 Here are the available  testing accounts:</h2>
 
-Berikut adalah daftar akun untuk keperluan testing saat anda mencoba aplikasi pertama kali, namun anda juga bisa membuat akun dengan daftar di halaman pendaftaran
+This is the list of accounts for testing purposes when we  first try the application: 
 
 | Role  | Email                  | Password | URL                                     |
 | ----- | ---------------------- | -------- | --------------------------------------- |
@@ -69,62 +66,56 @@ Berikut adalah daftar akun untuk keperluan testing saat anda mencoba aplikasi pe
 
 <p></p>
 
-<h2 id="syarat">💾 Prasyarat yang Diperlukan</h2>
+<h2 id="syarat">💾 Required Requirements</h2>
 
-Berikut adalah daftar layanan dan aplikasi yang wajib dan diperlukan selama anda menjalankan aplikasi learnify jika anda belum menginstall nya maka disarankan untuk menginstall nya terlebih dahulu
+The following is a list of services and applications that are required and needed while : run the learnify application if  not installed them yet it is recommended to install them first  
 
 - PHP 7, 8 & Web Server [XAMPP, LAMPP, MAMP]
-- Web Browser [Chrome, Firefox, Safari & Opera]
-- Internet [Karena menggunakan banyak CDN]
-- Setting lanjutan PHP [max_upload & post_max di php.ini]
+- Web Browser [Chrome, Firefox, Safari & Opera]  
+- Internet [Because it uses many CDNs]
+- Advanced PHP settings [max_upload & post_max in php.ini]
 
 <p></p>
 
-<h2 id="download">🐱‍💻 Panduan Menjalankan & Install Aplikasi</h2>
+<h2 id="download">🐱‍💻 Guide on Running & Installing Application</h2>
 
-Untuk menjalankan aplikasi atau web ini kamu harus install XAMPP dan mempunyai setidaknya satu web browser yang terinstall di komputer anda.
+To run this application or web you must install XAMPP and have at least one web browser installed on computer.
 
 ```bash
-# Clone repository ini atau download di
-$ git clone https://github.com/syauqi/learnify.git
+# # Clone this repository or download 
+$ git clone https://github.com/meryam38/e-learning.git
 
-# Buat database
-Buat database dengan nama "learnify" di DMBS [phpmyadmin, dll]
+# Create database
+Create a database named "learnify" in your DBMS [phpmyadmin, etc.] 
 
 # Upload database
-Arahkan folder ke learnify/database/learnify.sql & upload ke dbms [phpmyadmin]
+Point your folder to learnify/database/learnify.sql & upload to your DBMS [phpmyadmin]
 
-# Buka browser
-http://localhost/learnify/welcome
+# Open browser  
+http://localhost/e-learning/welcome
 
-# Enjoy, jika ingin login maka liat panduan akun diatas
+
 ```
 
 <p></p>
 
-<h2 id="dukungan">💌 Dukungan</h2>
 
-Kalian bisa mendukung saya di platform trakteer! Dukungan kalian akan sangat membantu untuk saya, namun dengan anda star project ini juga sudah sangat membantu lho!
+<h2 id="kontribusi">🤝Contribution </h2>
 
-<p></p>
-
-<a href="https://trakteer.id/syaufy" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-5.png" height="40" style="border:0px;height:40px;" alt="Trakteer Saya"></a>
-
-<p></p>
-
-<h2 id="kontribusi">🤝 Kontribusi</h2>
-
-Contributions, issues and feature requests sangat saya apresiasi karena aplikasi ini jauh dari kata sempurna. Jangan ragu untuk pull request dan membuat perubahan pada project ini.
-
-Berhubung Project ini saya selesaikan sendiri, namun banyak fitur dan banyak hal yang bisa diperbaiki maka bantuan kalian sangat saya apresiasi.
+this project made by : Eddaif Meriem El Batoul 
+                       Essouissi Diyaa
+		       El hjouji Hajar
+		       Amzoug youssef
+	               Khatwi Mohammed Amine
+	               
 
 <p></p>
 
-<h2 id="lisensi">📝 Lisensi</h2>
+<h2 id="lisensi">📝 Lisence</h2>
 
-- Copyright © 2022 SYAUQIZAIDAN KHAIRAN KHALAF
-- Learnify adalah aplikasi web open-source yang berlisensi dibawah lisensi MIT
+- Copyright © 2024 MB
+- Learnify is an open-source web application licensed under the MIT license
 
 ---
 
-**<p align="center">Made with ❤️ by SYAUQIZAIDAN KHAIRAN KHALAF</p>**
+**<p align="center">Made with ❤️ by MB </p>**
