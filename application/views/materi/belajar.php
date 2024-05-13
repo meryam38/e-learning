@@ -20,7 +20,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
-    <title>Selamat Belajar - <?php
+    <title>Bon apprentissage - <?php
                                 $data['user'] = $this->db->get_where('siswa', ['email' =>
                                 $this->session->userdata('email')])->row_array();
                                 echo $data['user']['nama'];
@@ -65,15 +65,15 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Salut, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                         $this->session->userdata('email')])->row_array();
                                                                                                         echo $data['user']['nama'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Page d'accueil</a>
                             </li>
-                            <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log Out</a>
+                            <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Déconnexion</a>
                             </li>
                         </ul>
                     </div>
@@ -89,16 +89,16 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="bg-white mx-auto p-4 buat-text" data-aos="fade-down" data-aos-duration="1400" style="width: 100%; border-radius:10px;">
             <div class="row" style="color: black; font-family: 'poppins';">
                 <div class="col-md-12 mt-1 ml-4">
-                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Selamat Belajar !
+                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Bon apprentissage !
                     </h1>
                     <h4 data-aos="fade-down" data-aos-duration="1700"><?php
                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                         $this->session->userdata('email')])->row_array();
                                                                         echo $data['user']['nama'];
-                                                                        ?> - Learnify Students</h3>
+                                                                        ?> - Élèves de Learnify</h3>
                         <p><?= $detail->nama_mapel ?> - Kelas <?= $detail->kelas ?></p>
                         <hr align="left" width="600;">
-                        <p style="line-height: 3px;">Kita akan mempelajari tentang</p>
+                        <p style="line-height: 3px;">Nous allons apprendre sur</p>
                         <p class="font-weight-bold mt--5">
                             <?= substr($detail->deskripsi, 0, 120); ?>
 
@@ -130,7 +130,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <h1 class="card-title display-4"><?= $detail->nama_guru; ?></h1>
                         <hr style="background-color: white;">
                         <h5 class="card-text"><?= $detail->nama_mapel; ?></h5>
-                        <p class="card-text"> Deskripsi materi pelajaran : <br> <?= $detail->deskripsi; ?></p>
+                        <p class="card-text"> Description du sujet de la leçon: <br> <?= $detail->deskripsi; ?></p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
             <div class="col-md-12">
                 <div class="card komen w-150 border-0">
                     <div class="card-body p-5" style="font-family: 'Poppins', sans-serif !important;">
-                        <h1 style="color: black; font-size:44px !important;">Apa komentarmu ?</h1>
+                        <h1 style="color: black; font-size:44px !important;">Quel est votre commentaire ?</h1>
                         <br>
                         <?php echo $disqus ?>
                     </div>
