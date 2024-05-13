@@ -93,7 +93,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                                                         $this->session->userdata('email')])->row_array();
                                                                         echo $data['user']['nama'];
                                                                         ?> - Élèves de Learnify</h4>
-                    <p>Matematika - Kelas X</p>
+                    <p>Mathématiques | Classe de X</p>
                     <hr width="80%">
                     <p data-aos="fade-down" class="font-weight-bold" data-aos-duration="1800">Veuillez choisir le matériel que vous souhaitez accéder ci-dessous!
                     </p>
