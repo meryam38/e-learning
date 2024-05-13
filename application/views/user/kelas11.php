@@ -93,8 +93,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <div class="col-md-12 mt-1">
                     <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Silahkan pilih mata pelajaran !
                     </h1>
-                    <p>Bonjour étudiant ! , Ceci est la page de matière de Learnify ! Veuillez sélectionner la matière que vous souhaitez
-    accéder et vous trouverez des vidéos et des matériaux prêts à être visionnés ! Bonne étude!</p>
+                    <p>Salut les étudiants ! Ceci est la page des matières de Learnify ! Veuillez choisir une matière à laquelle vous souhaitez accéder
+    et voilà, les vidéos et les matériels sont prêts à être visionnés ! Bonne étude, chers étudiants !</p>
                     <hr>
                     <h4 data-aos="fade-down" data-aos-duration="1700"><?php
                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
