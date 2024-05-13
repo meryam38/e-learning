@@ -21,11 +21,11 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <!-- Title -->
-    <title>Selamat datang - <?php
+    <title>Bienvenue - <?php
                             $data['user'] = $this->db->get_where('siswa', ['email' =>
                             $this->session->userdata('email')])->row_array();
                             echo $data['user']['nama'];
-                            ?> - Learnify Student Page</title>
+                            ?> - Page de l'élève Learnify</title>
     <!-- Bootstrap CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
@@ -93,16 +93,15 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <div class="col-md-12 mt-1">
                     <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Silahkan pilih mata pelajaran !
                     </h1>
-                    <p>Hello Students! , Ini merupakan halaman mapel learnify ! Silahkan pilih mapel yang akan kamu
-                        akses
-                        dan taddaa video dan materi siap disaksikan! Selamat belajar ya students!</p>
+                    <p>Bonjour étudiant ! , Ceci est la page de matière de Learnify ! Veuillez sélectionner la matière que vous souhaitez
+    accéder et vous trouverez des vidéos et des matériaux prêts à être visionnés ! Bonne étude!</p>
                     <hr>
                     <h4 data-aos="fade-down" data-aos-duration="1700"><?php
                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                         $this->session->userdata('email')])->row_array();
                                                                         echo $data['user']['nama'];
                                                                         ?> - Learnify Students</h3>
-                        <h5>Mata Pelajaran Kelas XI</h5>
+                        <h5>Matière de la classe XI</h5>
                 </div>
             </div>
         </div>
