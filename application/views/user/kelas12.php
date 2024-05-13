@@ -21,11 +21,11 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <!-- Title -->
-    <title>Selamat datang - <?php
+    <title>Bienvenue - <?php
                             $data['user'] = $this->db->get_where('siswa', ['email' =>
                             $this->session->userdata('email')])->row_array();
                             echo $data['user']['nama'];
-                            ?> - Learnify Student Page</title>
+                            ?> - Page de l'élève Learnify</title>
     <!-- Bootstrap CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
@@ -66,16 +66,15 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Bonjour, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                         $this->session->userdata('email')])->row_array();
                                                                                                         echo $data['user']['nama'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Accueil</a>
                             </li>
-                            <li class="nav-item "><a class="nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log
-                                    Out</a>
+                            <li class="nav-item "><a class="nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Déconnexion</a>
                             </li>
                         </ul>
                     </div>
@@ -91,18 +90,17 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="bg-white mx-auto p-4 buat-text" data-aos="fade-down" data-aos-duration="1400" style="width: 100%; border-radius:10px;">
             <div class="row" style="color: black; font-family: 'poppins';">
                 <div class="col-md-12 mt-1">
-                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Silahkan pilih mata pelajaran !
+                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Veuillez choisir une matière !
                     </h1>
-                    <p>Hello Students! , Ini merupakan halaman mapel learnify ! Silahkan pilih mapel yang akan kamu
-                        akses
-                        dan taddaa video dan materi siap disaksikan! Selamat belajar ya students!</p>
+                    <p>Salut les étudiants ! Ceci est la page des matières de Learnify ! Veuillez choisir une matière à laquelle vous souhaitez accéder
+    et voilà, les vidéos et les matériels sont prêts à être visionnés ! Bonne étude, chers étudiants !</p>
                     <hr>
                     <h4 data-aos="fade-down" data-aos-duration="1700"><?php
                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                         $this->session->userdata('email')])->row_array();
                                                                         echo $data['user']['nama'];
-                                                                        ?> - Learnify Students</h3>
-                        <h5>Mata Pelajaran Kelas XII</h5>
+                                                                        ?> - Étudiants de Learnify</h3>
+                       <h5>Matière de la classe XII</h5>
                 </div>
             </div>
         </div>
