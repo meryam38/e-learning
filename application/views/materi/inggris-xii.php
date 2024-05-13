@@ -20,7 +20,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
-    <title>Bahasa Inggris | Kelas XII - Learnify</title>
+    <title>Anglais | Classe XII - Learnify</title>
     <!-- Bootstrap CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
@@ -61,15 +61,15 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Bonjour, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                         $this->session->userdata('email')])->row_array();
                                                                                                         echo $data['user']['nama'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Accueil</a>
                             </li>
-                            <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log Out</a>
+                            <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Déconnexion</a>
                             </li>
                         </ul>
                     </div>
@@ -85,20 +85,17 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="bg-white mx-auto p-4 buat-text" data-aos="fade-down" data-aos-duration="1400" style="width: 100%; border-radius:10px;">
             <div class="row" style="color: black; font-family: 'poppins';">
                 <div class="col-md-12 mt-1 text-center">
-                    <h1 class="display-4" data-aos="fade-down" data-aos-duration="1400">Silahkan pilih materi yang akan
-                        kamu pelajari !
+                    <h1 class="display-4" data-aos="fade-down" data-aos-duration="1400">Veuillez choisir le matériel que vous
+                    souhaitez étudier !
                     </h1>
                     <h4 data-aos="fade-down" data-aos-duration="1700"><?php
                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                         $this->session->userdata('email')])->row_array();
                                                                         echo $data['user']['nama'];
-                                                                        ?> - Learnify Students</h4>
-                    <p>Bahasa Inggris - Kelas XII</p>
+                                                                        ?> -Élèves de Learnify</h4>
+                    <p>Anglais - Classe XII</p>
                     <hr width="80%">
-                    <p data-aos="fade-down" class="font-weight-bold" data-aos-duration="1800">Silahkan pilih materi yang
-                        akan kamu akses
-                        dibawah
-                        ini!
+                    <p data-aos="fade-down" class="font-weight-bold" data-aos-duration="1800">Veuillez choisir le matériel que vous souhaitez accéder ci-dessous!
                     </p>
                 </div>
             </div>
@@ -118,8 +115,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             <p class=" card-text">
                                 <?= substr($u->deskripsi, 0, 100); ?>&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.
                             </p>
-                            <a href="<?php echo site_url('materi/belajar/' . $u->id); ?>" class="btn btn-white">Pelajari
-                                Sekarang !</a>
+                            <a href="<?php echo site_url('materi/belajar/' . $u->id); ?>" class="btn btn-white">Étudier
+                            maintenant  !</a>
                         </div>
                     </div>
                 </div>
