@@ -209,14 +209,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" name="agree" class="custom-control-input" id="agree">
-                                        <label class="custom-control-label" for="agree">Saya Mengerti dan ingin
-                                            melajutkan.</label>
+                                        <label class="custom-control-label" for="agree">Je comprends et souhaite continuer.</label>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-success btn-lg btn-block">
-                                        Daftar ⭢
+                                        S'inscrire⭢
                                     </button>
                                 </div>
 
@@ -233,7 +232,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <!-- Start Footer -->
     <footer class="main-footer">
         <div class="text-center">
-            Copyright &copy; 2020 <div class="bullet"></div><a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+            Copyright &copy; 2024 <div class="bullet"></div>
         </div>
     </footer>
     <!-- End Footer -->
