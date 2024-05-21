@@ -194,7 +194,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
                                 <div id="" class="row">
                                     <div class="form-group col-12">
-                                        <label>Mata Pelajaran yang diajar</label>
+                                        <label>Matières enseignées</label>
                                         <select class="form-control selectric" name="mapel">
                                             <option value="Matematika">Ingenieurie de Fomration</option>
                                             <option value="Bahasa Inggris">Ingenieurie de Compétence</option>
