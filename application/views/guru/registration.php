@@ -72,10 +72,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         </div>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="<?= base_url('admin') ?>">LY</a>
+                        <a href="<?= ">base_url('admin') ?>">LY</a>
                     </div>
 
-                    <ul class="sidebar-menu">
+                    <ul class="sidebar-menu
                         <li class="menu-header ">Tableau de bord</li>
                         <li class="nav-item dropdown ">
                             <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Tableau de bord</span></a>
@@ -90,7 +90,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             </ul>
                         </li>
 
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Gestion des enseignants</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
                                 <span>Enseignant</span></a>
@@ -136,8 +136,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <hr>
                                 <p class="card-text"> Après avoir croisé Helen dans un restaurant, j'ai réalisé qu'elle était simplement "belle au bureau", une expression souvent utilisée pour décrire quelqu'un qui a une apparence soignée dans un contexte professionnel mais qui ne se démarque pas autrement. Cette prise de conscience s'est produite alors que nous nous préparions pour notre réunion debout aujourd'hui. Qui est responsable de cette demande ? Qui est chargé de cette demande ? Il semble que les objectifs changent constamment.
                                 </p>
-                                <a href="#detail" class="btn btn-success">Saya paham dan
-                                    ingin melanjutkan ⭢</a>
+                                <a href="#detail" class="btn btn-success">Je comprends et je veux continuer⭢</a>
                             </div>
                         </div>
                     </div>
@@ -145,16 +144,15 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div id="detail" class="card card-success">
                         <div class="col-md-12 text-center">
                             <p class="registration-title font-weight-bold display-4 mt-4" style="color:black; font-size: 50px;">
-                                Pendaftaran Guru</p>
-                            <p style="line-height:-30px;margin-top:-20px;">Silahkan isi data data yang diperlukan
-                                dibawah </p>
+                                Inscription des Enseignants</p>
+                            <p style="line-height:-30px;margin-top:-20px;">Veuillez remplir les données requises ci-dessous. </p>
                             <hr>
                         </div>
 
                         <div class="card-body">
                             <form method="POST" action="<?= base_url('admin/add_guru') ?>">
                                 <div id="" class="form-group">
-                                    <label for="nip">Nomor Induk Pegawai</label>
+                                    <label for="nip">Numéro d'Identification du Personnel</label>
                                     <input id="nip" type="text" class="form-control" name="nip">
                                     <?= form_error('nip', '<small class="text-danger">', '</small>'); ?>
                                     <div class="invalid-feedback">
