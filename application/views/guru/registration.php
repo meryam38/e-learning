@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Tambah Data Guru - Learnify</title>
+    <title>Ajouter des données d'enseignant - Learnify</title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -48,16 +48,16 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" style="margin-bottom:4px !important;" src="../assets/stisla-assets/img/avatar/avatar-2.png" class="rounded-circle mr-1 my-auto">
-                            <div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Hello, <?php
+                            <div class="d-sm-none d-lg-inline-block" style="font-size:15px;">Bonjour, <?php
                                                                                                     $data['user'] = $this->db->get_where('admin', ['email' =>
                                                                                                     $this->session->userdata('email')])->row_array();
                                                                                                     echo $data['user']['username'];
                                                                                                     ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Admin - Learnify</div>
+                            <div class="dropdown-title">Administrateur - Learnify</div>
                             <a href="<?= base_url('welcome/logout') ?>" class="dropdown-item has-icon text-danger">
-                                <i class="fas fa-sign-out-alt"></i> Logout
+                                <i class="fas fa-sign-out-alt"></i> Déconnexion
                             </a>
                         </div>
                     </li>
@@ -76,52 +76,50 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     </div>
 
                     <ul class="sidebar-menu">
-                        <li class="menu-header ">Dashboard</li>
+                        <li class="menu-header ">Tableau de bord</li>
                         <li class="nav-item dropdown ">
-                            <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                            <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Tableau de bord</span></a>
                         </li>
 
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Gestion des élèves</li>
                         <li class="nav-item dropdown ">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>étudiant</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Données des élèves</a></li>
                             </ul>
                         </li>
 
                         <li class="menu-header">Management Guru</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-                                <span>Guru</span></a>
+                                <span>Enseignant</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Données de l'enseignant</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Ajouter des données d'enseignant</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">Gestion du matériel</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-                                <span>Materi</span></a>
+                                <span>Matériel</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Données du matériel</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Ajouter du matériel</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">About Developer</li>
+                        <li class="menu-header">À propos du développeur</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
-                                <span>Developer</span></a>
+                                <span>Développeur</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">À propos du développeur</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
-                                        Learnify</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">À propos de Learnify</a>
                                 </li>
                             </ul>
                         </li>
@@ -134,9 +132,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="">
                         <div class="card" style="width:100%;">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;">Tambah Data Guru</h2>
+                                <h2 class="card-title" style="color: black;">Ajouter des données d'enseignant</h2>
                                 <hr>
-                                <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.
+                                <p class="card-text"> Après avoir croisé Helen dans un restaurant, j'ai réalisé qu'elle était simplement "belle au bureau", une expression souvent utilisée pour décrire quelqu'un qui a une apparence soignée dans un contexte professionnel mais qui ne se démarque pas autrement. Cette prise de conscience s'est produite alors que nous nous préparions pour notre réunion debout aujourd'hui. Qui est responsable de cette demande ? Qui est chargé de cette demande ? Il semble que les objectifs changent constamment.
                                 </p>
                                 <a href="#detail" class="btn btn-success">Saya paham dan
                                     ingin melanjutkan ⭢</a>
